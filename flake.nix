@@ -22,6 +22,7 @@
             src = ./.;
             vendorHash = "sha256-CaHfYr9wDbxkWxsJXBqyoKHi0wrq3CRzop07lhFLDSM=";
           };
+          default = self.packages.${system}.${pname};
         });
 
       devShells = forAllSystems (system:
